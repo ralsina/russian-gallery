@@ -1,0 +1,52 @@
+8
+
+dir
+460
+svn+ssh://ralsina@netmanagers.com.ar/srv/svn/igrupos/trunk/grupos/media/css/blueprint/plugins/fancy-type
+svn+ssh://ralsina@netmanagers.com.ar/srv/svn/igrupos
+
+
+
+2008-03-04T14:41:07.326631Z
+416
+ralsina
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+add8dc96-563a-0410-9e8e-ea9bc2aa2cde
+
+screen.css
+file
+
+
+
+
+2008-03-09T16:01:32.000000Z
+9c812085f476433020d69cea17115cc6
+2008-03-04T14:41:07.326631Z
+416
+ralsina
+
+readme.txt
+file
+
+
+
+
+2008-03-09T16:01:32.000000Z
+4e88733cdf0edfd23cc565790a70ac9f
+2008-03-04T14:41:07.326631Z
+416
+ralsina
+
