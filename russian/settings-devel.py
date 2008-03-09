@@ -81,5 +81,5 @@ INSTALLED_APPS = (
 )
 
 
-MAKO_TEMPLATE_DIRS = ('mako_templates')
+MAKO_TEMPLATE_DIRS = ('mako_templates',)
 
