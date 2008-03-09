@@ -38,19 +38,22 @@
   
   </head>
   <body class="yui-skin-sam container" style="margin:0px; float:left;">
-<!--    <div class="span-20 rastro" >
-      <span class="texto10" style='float:left;'>
-        ${self.rastro()}
-      </span>
-    </div>-->
-
-    <div class="span-20 last">
-      ${self.cuerpo()}
-    </div>
+    ${self.cuerpo()}
   </body>
 </html>
 
 <%def name="cuerpo()">
+      <div class="span-8">
+        ${self.texto()}
+      </div>
+      <div class="span-16 last">
+        ${self.media()}
+      </div>
+</%def>
+
+
+
+<%def name="media()">
 </%def>
 
 <%def name="titulo()">

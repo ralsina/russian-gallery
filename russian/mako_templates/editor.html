@@ -2,3 +2,37 @@
 
 <%inherit file="base.html"/>
 
+<%def name="cuerpo()">
+  <form method="post" action="" onSubmit="editorText.saveHTML();">
+  %if form.non_field_errors():
+    <div class="error">${form.non_field_errors()}</div>
+  %endif
+
+  <table width="100%">
+      %for field in ['name','title','text']:
+        %if form[field].errors:
+          <tr>
+            <td colspan=2 style="border: 0px;">
+              <div class="error">${form[field].errors}</div>
+        %endif
+        <tr>
+          <td style="vertical-align: top; text-align:right;">${form[field].label_tag()}:
+          <td style="vertical-align: top;">${form[field]}
+      %endfor
+      <tr>
+      <td style="vertical-align: top; text-align:right;"><a href="/" id="cancel">Cancel</a>
+      <td style="vertical-align: top;"><input type="submit" value="save" id="save">
+    </table>
+    <script type="text/javascript">
+    var editorText = new YAHOO.widget.Editor('id_text', {
+        height: '300px',
+        width: '482px',
+        dompath: true, //Turns on the bar at the bottom
+        animate: true //Animates the opening, closing and moving of Editor windows
+    });
+    editorText.render();
+    var b1 = new YAHOO.widget.Button( "save");
+    var b2 = new YAHOO.widget.Button( "cancel");
+    </script>
+
+</%def>
